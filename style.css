@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* background-color: bisque; */
+    background-color: #D3CBC0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+nav {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0px 150px;
+    z-index: 1;
+    border-bottom: 0.2px solid #717767;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+    width: 20%;
+
+    height: 100%;
+
+    line-height: 15px;
+
+}
+
+.left p span {
+    font-weight: 800 !important;
+
+}
+
+
+.center {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.center p {
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+}
+
+.right {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: end;
+}
+
+.credit-text {
+    display: flex;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+.credit-text h4 {
+    /* font-family: magnetlight; */
+    font-size: 12px;
+    color: #717767;
+}
+
+.credit-svg {
+    border: 1px solid transparent;
+}
+
+.cart-svg,
+.profile-svg {
+    border: 1px solid #403F3D;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 28px;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #00000000;
+    position: absolute;
+    top: 0;
+    padding-top: 120px;
+    padding-left: 150px;
+}
+
+.overlay h1 {
+    width: 50%;
+    font-size: 60px;
+    /* font-family: magnetlight; */
+    margin-bottom: 130px;
+}
+
+.box {
+
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    height: 280px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.389);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    transition: all ease 0.3s;
+    position: relative;
+}
+
+.text {
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.text p {
+    font-size: 26px;
+    /* font-family: magnetlight; */
+    transition: all ease 0.3s;
+
+}
+
+.card:hover {
+    background-color: #FFFDF5;
+}
+
+.card:hover p {
+    margin-top: -30%;
+}
+
+
+
+.para-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    bottom: 40%;
+    z-index: 9999;
+    
+
+}
+
+.para-container .para {
+    width: 100%;
+    height: 2vh;
+    position: relative;
+}
+
+.para-container  .para h4 {
+    font-size: 12px;
+    position: absolute; 
+    width: 100%;
+    height: 2vh;
+  
+
+    /* font-family: magnetlight; */
+    transition: all ease 0.5s;
+    opacity: 0;
+    
+}
+
+.card:hover .para-container.para h4 {
+
+    opacity: 1;
+    
+}
+
+.marquee {
+    height: 100%;
+    width: 100%;
+    background-color: #DFDAC6;
+    position: relative;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.marquee img {
+    height: 100%;
+    width: 100%;
+    scale: 0.55;
+}
+
+.marquee-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.marquee-divs {
+    /* position: absolute; */
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.marquee-track-top {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: marquee 15s linear infinite;
+
+}
+
+.marquee-container {
+    flex-shrink: 0;
+    /* background-color: yellow; */
+
+}
+
+.marquee-container h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+.marquee-track-bottom {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: marquee-bottom 15s linear infinite;
+
+}
+
+@keyframes marquee-bottom {
+    0% {
+        transform: translateX(-70%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+/* .image-container{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.cards{
+    height: 250px;
+    width: 250px;
+    background-color: yellow;
+    border-radius: 20px;
+    z-index: 2;
+    transition: all ease 0.5ms;
+
+}
+.card1:hover ~ .image1{
+    opacity: 1;
+}  */
+  section.big-cards {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.big-cards > .cards1 .card1 .overlay {
+  color: white;
+  backdrop-filter: blur(20px);
+}
+
+.big-cards > .cards1 .card1 {
+  width: 300px;
+  height: 300px;
+}
+
+.big-cards > .cards1 .card1 .content {
+  font-size: 12px;
+}
+
+.big-cards > .cards1 .card1 .content + .content {
+  margin-top: 10px;
+}
+
+.big-cards > .cards1 .card1 .content > div {
+  line-height: 12px;
+}
+
+.big-cards > .cards1 .card1:hover {
+  width: 400px;
+  height: 400px;
+}
+
+.big-cards > .cards1 .card1:hover .content {
+  font-size: 17px;
+}
+
+.big-cards > .cards1 .card1:hover .content > div {
+  line-height: 22px;
+}
+
+.card-heading {
+  font-size: 36px !important;
+  margin-bottom: 5px;
+  
+}
+
+.card-heading > div {
+  line-height: 50px !important;
+}
+
+.background-images {
+  z-index: -1;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.background-images > img {
+  filter: brightness(0.8);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: opacity 0.2s, transform 0.7s;
+}
+
+.background-images > img:nth-child(1){
+  opacity: 1;
+  transform: scale(1);
+}
+
+section.big-cards:has(.cards1 .card1:nth-child(1):hover) .background-images > img:nth-child(1){
+  opacity: 1;
+}
+
+section.big-cards:has(.cards1 .card1:nth-child(2):hover) .background-images > img:nth-child(2){
+  opacity: 1;
+  transform: scale(1);
+}
+
+section.big-cards:has(.cards1 .card1:nth-child(3):hover) .background-images > img:nth-child(3){
+  opacity: 1;
+  transform: scale(1);
+}
+
+section.commitment {
+  height: 40vh;
+  width: 100%;
+}
