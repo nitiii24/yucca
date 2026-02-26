@@ -301,8 +301,8 @@ main {
     }
 
 }
-/* .image-container{
-    height: 100%;
+  .img-container{
+    height: 100vh;
     width: 100%;
     background-color: red;
     display: flex;
@@ -310,26 +310,72 @@ main {
     justify-content: center;
     gap: 20px;
     position: relative;
-}
-.image-container img{
+} 
+
+/* .background-images img {
+  filter: brightness(0.8);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  /* transition: opacity 0.2s, transform 0.7s; */
+  /* object-fit: cover; */
+/* } */ 
+ .img-container img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
+    
+    
 
-}
-.cards{
-    height: 250px;
-    width: 250px;
-    background-color: yellow;
+} 
+     .cards {
+    height: 280px;
+    width: 280px;
+    background-color: rgba(252, 252, 252, 0.471);
     border-radius: 20px;
-    z-index: 2;
-    transition: all ease 0.5ms;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    transition: all ease 0.5s;
+    position: relative;
+    z-index: 2; 
+   
 }
-.card1:hover ~ .image1{
+.cards:hover {
+    background-color: #FFFDF5;
+}
+
+.cards:hover p {
+    margin-top: -30%;
+}
+.card1:hover {
+    width: 380px;
+    height: 380px;
+}
+.card2:hover {
+    width: 380px;
+    height: 380px;
+}
+.card3:hover {
+    width: 380px;
+    height: 380px;
+}
+
+ .card1:hover ~ .img1{
     opacity: 1;
-}  */
-  section.big-cards {
+    
+}  
+.card2:hover ~ .img2{
+    opacity: 1;
+} 
+.card3:hover ~ .img3{
+    opacity: 1;
+}  
+  /* section.big-cards {
   height: 100vh;
   width: 100%;
 
@@ -340,7 +386,7 @@ main {
   position: relative;
 }
 
-.big-cards > .cards1 .card1 .overlay {
+.big-cards > .cards1 .card .text {
   color: white;
   backdrop-filter: blur(20px);
 }
@@ -350,42 +396,42 @@ main {
   height: 300px;
 }
 
-.big-cards > .cards1 .card1 .content {
+.big-cards > .cards1 .card .para {
   font-size: 12px;
 }
 
-.big-cards > .cards1 .card1 .content + .content {
+.big-cards > .cards1 .card .para + .para {
   margin-top: 10px;
-}
+} */
 
-.big-cards > .cards1 .card1 .content > div {
+/* .big-cards > .cards1 .card .para > div {
   line-height: 12px;
-}
+} */
 
-.big-cards > .cards1 .card1:hover {
+/* .big-cards > .cards1 .card:hover {
   width: 400px;
   height: 400px;
 }
 
-.big-cards > .cards1 .card1:hover .content {
+.big-cards > .cards1 .card:hover .para {
   font-size: 17px;
 }
 
-.big-cards > .cards1 .card1:hover .content > div {
+.big-cards > .cards1 .card:hover .para > div {
   line-height: 22px;
 }
 
-.card-heading {
+.text {
   font-size: 36px !important;
   margin-bottom: 5px;
   
 }
 
-.card-heading > div {
+.text > div {
   line-height: 50px !important;
-}
+} */
 
-.background-images {
+/* .background-images {
   z-index: -1;
 
   position: absolute;
@@ -395,7 +441,7 @@ main {
   bottom: 0;
 }
 
-.background-images > img {
+.background-images img {
   filter: brightness(0.8);
   opacity: 0;
   position: absolute;
@@ -405,21 +451,21 @@ main {
   transition: opacity 0.2s, transform 0.7s;
 }
 
-.background-images > img:nth-child(1){
+.background-images img:nth-child(1){
+  opacity: 1;
+  transform: scale(1);
+} */
+
+/* section.big-cards:has(.cards1 .card:nth-child(1):hover) .background-images > img:nth-child(1){
+  opacity: 1;
+}
+
+section.big-cards:has(.cards1 .card:nth-child(2):hover) .background-images > img:nth-child(2){
   opacity: 1;
   transform: scale(1);
 }
 
-section.big-cards:has(.cards1 .card1:nth-child(1):hover) .background-images > img:nth-child(1){
-  opacity: 1;
-}
-
-section.big-cards:has(.cards1 .card1:nth-child(2):hover) .background-images > img:nth-child(2){
-  opacity: 1;
-  transform: scale(1);
-}
-
-section.big-cards:has(.cards1 .card1:nth-child(3):hover) .background-images > img:nth-child(3){
+section.big-cards:has(.cards1 .card:nth-child(3):hover) .background-images > img:nth-child(3){
   opacity: 1;
   transform: scale(1);
 }
@@ -427,4 +473,4 @@ section.big-cards:has(.cards1 .card1:nth-child(3):hover) .background-images > im
 section.commitment {
   height: 40vh;
   width: 100%;
-}
+} */
