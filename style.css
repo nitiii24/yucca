@@ -763,7 +763,7 @@ display: flex;
     border-bottom: 1px solid #fffdf5;
     display: flex;
     align-items: center;
-   transform: translateX(calc(-27.8958% - 2.80552px));
+   /* transform: translateX(calc(-27.8958% - 2.80552px)); */
     
 }
 
@@ -784,3 +784,355 @@ display: flex;
     flex-shrink: 0;
     padding: 0px 1vh;
 }
+.page-6 {
+    width: 100%;
+    height: 110vh;
+    background-color: #fffdf5;
+    display: flex;
+    padding: 10vh calc(10% + 10px) 10vh calc(10% + 10px);
+    gap: 10vh;
+}
+.p6-left {
+    width: 47%;
+}
+.p6-left-upper {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+}
+.p6-left-upper h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: 'Magnetik-A';
+}
+.p6-left-lower {
+    height: 84%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.p6-lower-text {
+    height: 14.2%;
+    border-bottom: 1px solid rgb(178, 178, 178);
+    display: flex;
+    gap: 3vh;
+    align-items: center;
+}
+.square-box {
+    height: 1.4vh;
+    width: 1.4vh;
+    background-color: black;
+    border-radius: 3px;
+}
+.p6-lower-text h2 {
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 'Magnetik-A';
+}
+.p6-left-upper p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.faq-section {
+    height: 60vh;
+    width: 100%;
+    background-color: #f7f4e9;
+    padding: 10vh calc(10% + 10px);
+    display: flex;
+    gap: 10vh;
+}
+.left-faq {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.left-faq h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Magnetik-A';
+}
+.p4-h3 {
+    position: relative;
+    height: 4vh;
+    width: 10vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.p4-h3 h3 {
+    font-weight: 400;
+    font-size: 13px;
+}
+.no-hover-h3 {
+    background-color: black;
+    color: #fffdf5;
+    width: fit-content;
+    height: 4vh;
+    width: 10vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: all ease 0.5s;
+}
+.overlay-h3 {
+    background-color: rgb(63, 63, 63);
+    color: #fffdf5;
+    width: fit-content;
+    height: 4vh;
+    width: 10vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -100%;
+    transition: all ease 0.3s;
+}
+.right-faq {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.right-faq-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid gray;
+    padding-right: 0.5vh;
+}
+.right-faq-box h2 {
+    font-size: 1.3rem;
+    padding-top: 1.5vh;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+.right-faq-box h1 {
+    font-size: 3.5vh;
+    transition: all ease 0.3s;
+    /* font-style: 'Magnetik'; */
+}
+footer {
+    height: 100vh;
+    width: 100%;
+    padding: 5vh calc(10% + 10px);
+    background-color: #dfdac6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upper-f {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.upper-f h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Magnetik-A';
+}
+.up-arrow-box {
+    height: 9.7vh;
+    width: 9.7vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+.disapp {
+    position: relative;
+    height: 5vh;
+    width: 5vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.disapp svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    width: 5vh;
+    rotate: -90deg;
+    transition: all ease 0.3s;
+}
+.overlay-ua {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #12271d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -100%;
+    left: 0;
+    transition: all ease 0.3s;
+}
+.overlay-ua svg {
+    rotate: -90deg;
+    height: 5vh;
+    width: 5vh;
+}
+.lower-f {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.upper-lf {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vh;
+}
+.upper-lf {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vh;
+}
+.lf-box svg {
+    height: 100%;
+    width: 100%;
+}
+.lf-img-box {
+    border: 1px solid #12271d;
+    border-radius: 5%;
+    transition: border-radius ease 0.5s;
+    overflow: hidden;
+}
+.lf-box {
+    height: 100%;
+    width: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.lf-bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease 1s;
+    scale: 115%;
+}
+.lf-bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lf-text {
+    width: 100%;
+    height: 6vh;
+    overflow: hidden;
+    position: relative;
+}
+.lf-text h1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: 'Magnetik-A';
+    position: absolute;
+    z-index: 5;
+}
+.hover-lf {
+    bottom: -100%;
+    color: white;
+    transition: all ease 0.3s;
+}
+.lf-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.283);
+    opacity: 0;
+}
+.lower-lf {
+    height: 8vh;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vh;
+    border: 1px solid #12271d;
+}
+.left-lf {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+.left-lf h3 {
+    font-weight: 500;
+    font-style: 'Magnetik-A';
+    font-size: 1.1rem;
+}
+.f-socials {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+    margin-left: 2.5vh;
+}
+.f-social {
+    transition: all ease 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    width: 3vh;
+}
+.right-lf {
+    display: flex;
+    gap: 3vh;
+}
+.right-lf-text {
+    position: relative;
+    overflow: hidden;
+    height: 3vh;
+    width: fit-content;
+}
+.right-lf-text h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+.checking-purpose-rlf {
+    opacity: 0;
+}
+.no-hover-rlf {
+    top: 0;
+}
+.no-hover-rlf, .hover-rlf {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.hover-rlf {
+    scale: 90%;
+    bottom: -100%;
+}
+.no-hover-rlf .hover-rlf {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
